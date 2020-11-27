@@ -10,7 +10,7 @@ public abstract class Desktop extends Computador {
 
   @Override
   public Double calcDiscount() {
-    
+    return this.isAllInOne && getSizeRAM() > 4 ? getPrice() * 0.2 : getPrice() * 0.1; 
   }
 
   public Boolean getIsAllInOne() {
@@ -20,5 +20,4 @@ public abstract class Desktop extends Computador {
   public void setIsAllInOne(Boolean isAllInOne) {
     this.isAllInOne = isAllInOne;
   }
-
 }
