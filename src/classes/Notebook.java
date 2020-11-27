@@ -14,7 +14,7 @@ public abstract class Notebook extends Computador {
   }
 
 
-  public Boolean gethasWebCam(Boolean hasWebCam) {
+  public Boolean gethasWebCam() {
     return this.hasWebCam;
   }
 
