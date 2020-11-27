@@ -21,7 +21,7 @@ public class Loja {
         
       if(computers.get(i) instanceof Notebook) {
         Notebook noteWebCam = (Notebook)computers.get(i);
-        if(noteWebCam.gethasWebCam())
+        if(noteWebCam.getHasWebCam())
           auxList.add(noteWebCam);
       }
     }

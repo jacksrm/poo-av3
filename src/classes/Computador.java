@@ -13,6 +13,8 @@ public abstract class Computador {
 
   public abstract Double calcDiscount();
 
+  public abstract void print();
+
   public String getNameCPU() {
     return this.nameCPU;
   }
@@ -36,5 +38,4 @@ public abstract class Computador {
   public void setPrice(Double price) {
     this.price = price;
   }
-
 }
