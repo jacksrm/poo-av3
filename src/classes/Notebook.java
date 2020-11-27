@@ -8,9 +8,10 @@ public abstract class Notebook extends Computador {
     this.hasWebCam = hasWebCam;
   }
 
+  @Override
   public Double calcDiscount() {
-    
-  };
+    return  getSizeRAM() > 5 ? getPrice() * 0.15 : getPrice() * 0.05; 
+  }
 
 
   public Boolean gethasWebCam(Boolean hasWebCam) {
